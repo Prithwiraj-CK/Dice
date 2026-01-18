@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <script src="index.js"></script>
-    <meta charset="utf-8">
-    <title>Dicee</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicee - Roll & Win</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-
-  </head>
-  <body>
-
+</head>
+<body>
     <div class="container">
-      <h1>CLICK ON THE  BUTTON BELOW</h1>
+        <h1 id="result">Roll the Dice!</h1>
+        
+        <div class="game-area">
+            <div class="player" id="player1">
+                <div class="player-name">Player 1</div>
+                <div class="dice-container" id="dice1-container">
+                    <div class="dice-face dice-1" id="dice1">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
 
-      <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="images/dice1.png">
-      </div>
+            <div class="vs-badge">VS</div>
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="images/dice2.png">
-      </div>
-     <div class="CLICK" onclick="myFunction()"> <button >CLICK ME</button>
-     </div>
+            <div class="player" id="player2">
+                <div class="player-name">Player 2</div>
+                <div class="dice-container" id="dice2-container">
+                    <div class="dice-face dice-1" id="dice2">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="roll-button" onclick="rollDice()">🎲 Roll Dice</button>
     </div>
+
+    <footer>Created by PRITHWIRAJ CK</footer>
+
     <script src="index.js"></script>
-  </body>
-
-  <footer>
-   PRITHWIRAJ CK
-  </footer>
+</body>
 </html>
-
-
